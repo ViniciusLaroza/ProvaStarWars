@@ -1,0 +1,40 @@
+
+
+### GET PLANETS ON API
+@name = GET PLANETS ON API
+
+GET http://localhost:3000/list
+Content-Type: application/json
+
+###
+
+@name = SAVE PLANET DB
+POST http://localhost:3000/save
+Content-Type: application/json
+
+{
+  "name":"Alderaan",
+  "url": "https://swapi.dev/api/planets/2/"
+}
+
+###
+
+### GET FAVORITES PLANETS
+@name = GET FAVORITES PLANETS
+
+GET http://localhost:3000/favorites/list
+
+###
+
+### DELETE PLANET FAVORITE
+@name = DELETE PLANET FAVORITE
+
+DELETE  http://localhost:3000/delete/c15defed-803f-4b82-8181-e870b08db359
+###
+
+### FILTER FAVORITES PLANETS
+@name = GET FILTERED FAVORITES PLANETS
+
+GET http://localhost:3000/favorites/list?name=Alderaan
+
+###
